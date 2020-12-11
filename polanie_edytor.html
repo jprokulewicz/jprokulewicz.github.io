@@ -1,0 +1,130 @@
+<HTML>
+<HEAD><TITLE>News</TITLE>
+<META HTTP-EQUIV="Content-Type" Content="text-html; charset=windows-1250">
+<STYLE type="text/css">
+<!--
+.text     { font-family:verdana; font-size:10px; color:#000000; font-weight:normal }
+.active   { font-family:verdana; font-size:10px; color:#FFFFFF; font-weight:bold }
+TD	  { font-family:verdana; font-size:10px; color:#000000; font-weight:normal; text-align:justify }
+C	  { font-family:verdana; font-size:10px; color:#000000; font-weight:normal; text-align:center }
+A	  { font-family:verdana; font-size:10px; color:#5B3123; font-weight:bold; text-decoration:none }
+A:Visited { font-family:verdana; font-size:10px; color:#72402E; font-weight:bold; text-decoration:none }
+A:Hover   { font-family:verdana; font-size:10px; color:#FFFFFF; font-weight:bold; text-decoration:none }
+-->
+</STYLE>
+</HEAD>
+<BODY BACKGROUND="files/grafika/tlo_light.jpg" BGPROPERTIES="fixed">
+
+<CENTER>
+  <FONT CLASS="active">EDYTOWANIE MAP</FONT> |
+  <A HREF="polanie_edytor_symbole.html" TARGET="strona">SYMBOLE</A> |
+  <A HREF="polanie_edytor_algorytmy.html" TARGET="strona">ALGORYTMY</A>
+
+
+<P>
+<TABLE BORDER="0" WIDTH="95%" CELLPADDING="1">
+ <TD>
+  <FONT CLASS="text">
+Klikając na przycisk z napisem "Edytor" pewnie spodziewaliście się jakiegoś programu do tworzenia map. Niestety, tym razem jesteśmy pozbawieni tego luksusu, co nie znaczy, że nie możemy samodzielnie stworzyć mapki do tej wspaniałej giery. Potrzebny nam będzie jedynie edytor tekstu (najlepiej WordPad pod Wingrozę), pomysł i trochę cierpliwości. Zaczynamy!<P>
+
+<CENTER><HR WIDTH="80%"></CENTER><P>
+
+Wszystkie mapy zawarte są w jednym pliku, a mianowicie "Level.dat". Znajdziemy go w podkatalogu "Graf" zawartym w głownym katalogu Polan. Przed jakimikolwiek operacjami radzę skopiować ten plik, a najlepiej zróbmy kopię całej gry, by móc bez problemu powrócić do "oryginału".<P>
+Otwórzmy więc ten plik. Zobaczymy pełno dziwnych znaków pozbawionych sensu. Jednak wystarczy się dobrze przyjrzeć, a spostrzeżemy przed sobą Półwysep Helski. Jest to jedna z mapek, osadzona na północy Polski. Proponuję porównać ją z mapką zamieszczoną w dziale "Solucja", w misji najbardziej wysuniętej na północ. Szybko zobaczymy podobieństwa. Mapki są zbudowane w ten sposób, że każdy obiekt występujący w grze ma inny symbol mu odpowiadający. Przy edycji map należy zwrócić uwagę na małe i duże litery, gdyż są one odmiennie przez komputer interpretowane. Ich wykaz znajduje się gdzieś niżej.<P>
+Najpierw powinniśmy odnaleźć mapę, która występuje w grze jako pierwsza. Każda plansza jest ponumerowana, więc nie powinno być problemów. Wystarczy użyć w danym edytorze funkcji Znajdź i wyszukać numer 15 (misja występująca w grze jako pierwsza ma właśnie ten numer). W całym pliku występuje tylko jedna "15", więc od razu ją znajdziesz. Edytor powinien podświetlić wyszuakiwany fragment tekstu.<P>
+
+<UL>
+W tym wersie znajdują się:
+<LI>algorytmy dla wroga, dotyczące taktyki, jaką ma on przyjąć,
+<LI>warunki ukończenia misji,
+<LI>ilość początkowa mleka (równa ilości maksymalnej),
+<LI>liczba ograniczająca liczbę budynków.
+</UL>
+
+Poniżej linijki, którą edytor wyszuka, rozpoczyna się mapka.
+Zbudowana jest ona z elementów składowych reprezentowanych przez inny znak każdy.<P>
+
+Wykaz wszystkich elementów znajdziesz
+<A HREF="polanie_edytor_symbole.html" TARGET="strona">tutaj</A>.<P>
+
+Edycji dokonuje się bardzo prosto. Wystarczy zamiast jakiegoś znaku wpisać inny. Spowoduje to zamianę na obiekt reprezentowany przez wprowadzany znak. Należy pamiętać, że budynki potrzebują pola 3x3, dlatego też powinniśmy pozostawić  nieco wolnej przestrzeni wokół.<P>
+
+Najlepiej wytłumaczyć to na przykładzie. Więc chcąc umieścić Budynek główny należy w jakimś miejscu literę H, a budynek pojawi się w miejscu przedstawionym jako znaki x na poniższym schemacie. Raczej nie powinno być kłopotów z odczytem :).<P>
+
+<CENTER>
+<KBD>
+xxx<BR>
+xxx<BR>
+xxH<BR>
+</KBD>
+</CENTER><P>
+
+Pozostałe obiekty możemy umieszczać swobodnie, może za wyjątkiem skał i mostów, które muszą być prawidłowo ułożone. Poniżej znajduje się malutki przepis na stworzenie przykładowego układu skał (coś w rodzaju krzyża).<P>
+
+<CENTER>
+<FONT CLASS="main">
+<KBD>
+ÚÄ·<BR>
+ł ş<BR>
+ÚÄŮ ÓÄ·<BR>
+ł &nbsp&nbsp&nbsp ş<BR>
+ÔÍ¸ ÉÍĽ<BR>
+ł ş<BR>
+ÔÍĽ<BR><BR>
+</KBD>
+</FONT>
+</CENTER>
+
+Poza tym ważne jest, aby nie dokonywać żadnych radykalnych zmian. Plik powinien zachować taką samą strukturę jak przed edycją. W przeciwnym przypadku może się zdarzyć, że gra się zawiesi albo jeszcze coś innego. Pamiętajmy, że ten plik jest czytany przez komputer i ważny jest każdy znak lub linijka przesunięcia.<P>
+
+<HR WIDTH="30%" ALIGN="center"><P>
+
+<A HREF="polanie_edytor_algorytmy.html" TARGET="strona">Tutaj</A> dowiesz się jak ustawić rodzaj przyjętej przez wroga strategii i kilka innych ciekawych rzeczy.
+<P>
+
+Dodatkowo możemy zmienić tytuł planszy, ale ma to znaczenie wyłącznie inforamcyjne.<P>
+
+Możliwa jest także ingerencja w treść tekstów wprowadzających i końcowych do każdej misji.<BR>
+Są one wszystkie zgromadzone w pliku "Level.ini", w podkatalogu "Graf".<BR>
+Wystarczy znaleźć odpowiednią misję i zmienić tekst. Niestety nie możemy używać bezpośrednio polskich liter, musimy je zastępować innymi znakami (w taki sposób otrzymujemy również znaki polskie pisząc nazwy postaci specjalnych). Więc żeby otrzymać polskie znaki wpisujemy:<P>
+
+
+<CENTER>
+<TABLE ALIGN="center" BORDER="1" WIDTH="80%" CELLPADDING="7">
+
+<TR>
+ <TD WIDTH="10%"><CENTER>ą</TD>
+ <TD WIDTH="10%"><CENTER>ę</TD>
+ <TD WIDTH="10%"><CENTER>ć</TD>
+ <TD WIDTH="10%"><CENTER>ł</TD>
+ <TD WIDTH="10%"><CENTER>ń</TD>
+ <TD WIDTH="10%"><CENTER>ó</TD>
+ <TD WIDTH="10%"><CENTER>ś</TD>
+ <TD WIDTH="10%"><CENTER>ż</TD>
+ <TD WIDTH="10%"><CENTER>ź</TD>
+</TR>
+
+<TR>
+ <TD WIDTH="10%"><CENTER>†</TD>
+ <TD WIDTH="10%"><CENTER>‘</TD>
+ <TD WIDTH="10%"><CENTER>Ť</TD>
+ <TD WIDTH="10%"><CENTER>’</TD>
+ <TD WIDTH="10%"><CENTER>¤</TD>
+ <TD WIDTH="10%"><CENTER>˘</TD>
+ <TD WIDTH="10%"><CENTER>ž</TD>
+ <TD WIDTH="10%"><CENTER>§</TD>
+ <TD WIDTH="10%"><CENTER>¦</TD>
+</TR>
+
+</TABLE>
+<P>
+
+
+<HR WIDTH="60%">
+<P>
+</CENTER>
+
+Właściwie to chyba wszystko, co wiem o edycji map. Część rzeczy jeszcze została nieodkryta, ale myślę, że w najbliższej przyszłości i one nie uchronią się przed rozszyfrowaniem.<P>
+Jeśli tylko znajdziesz coś fajnego, na co nie zwróciłem tutaj uwagi, to napisz do mnie. Miłym okiem patrzę także na nowe mapki, nowinki i ogólnie wszystko co związane z Polanami. Thx!
+
+</HTML>

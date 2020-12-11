@@ -1,0 +1,68 @@
+<HTML>
+<HEAD><TITLE>Polanie a inne systemy operacyjne</TITLE>
+<META HTTP-EQUIV="Content-Type" Content="text-html; charset=windows-1250">
+<STYLE type="text/css">
+<!--
+.text     { font-family:verdana; font-size:10px; color:#000000; font-weight:normal }
+.active   { font-family:verdana; font-size:10px; color:#FFFFFF; font-weight:bold }
+TD	  { font-family:verdana; font-size:10px; color:#000000; font-weight:normal; text-align:justify }
+A	  { font-family:verdana; font-size:10px; color:#5B3123; font-weight:bold; text-decoration:none }
+A:Visited { font-family:verdana; font-size:10px; color:#72402E; font-weight:bold; text-decoration:none }
+A:Hover   { font-family:verdana; font-size:10px; color:#FFFFFF; font-weight:bold; text-decoration:none }
+-->
+</STYLE>
+</HEAD>
+<BODY BACKGROUND="files/grafika/tlo_light.jpg" BGPROPERTIES="fixed">
+
+<CENTER>
+  <FONT CLASS="active"><B>WINDOWS XP</B></FONT>
+<!--  <A HREF="polaniecd_recenzje_gam.html" TARGET="strona"><B>GAMBLER</B></A> | -->
+<BR><BR>
+
+<TABLE BORDER="0" WIDTH="71%" CELLPADDING="0" ALIGN="center">
+ <TR>
+  <TD>
+
+<FONT CLASS="text">
+Dział ten jest odpowiedzią na wiele maili, ktore otrzymałem właśnie od Was, gości tej witryny. Bedą w niej opisane sposoby radzenia sobie z uruchamianiem Polan pod różnymi systemami operacyjnymi. Na razie tylko Windows XP, ale w przyszłości planuję tutaj wrzucić opisy dotyczące innych platform. Ewentualne pytania czy niejasności w opisach proszę zgłaszać na forum lub bezpośrednio do <A HREF="mailto:jprokulewicz@poczta.onet.pl">mnie</A>. Postaram się w miare możliwości pomóc.<BR><BR>
+
+   <HR WIDTH="70%" ALIGN="center"><BR>
+  </TD>
+ </TR>
+</TABLE>
+
+<TABLE BORDER="0" WIDTH="80%" CELLPADDING="0" ALIGN="center">
+ <TR>
+  <TD>
+<B>Polanie | VDMSound</B><BR><BR>
+
+Ten sposób będzie oparty o wykorzystanie programu o nazwie VDMSound. Aplikacja ta, krótko mówiąc, służy do emulacji aplikacji dosowych, pozwalając przy tym na korzystanie z wszelkich sprzętowych dobrodziejstw typu karta dźwiękowa czy joystick. Dla nas najważniejsze jest, że program ten pozwoli nam zagrać w dyskietkowych Polan pod Windowsem XP.<BR><BR>
+
+Przede wszystkim musimy ściągnąć ten program. Można to zrobić <A HREF="files/pliki/vdmsound2.1.0.zip">tutaj</A> lub bezpośrednio na stronie autorów. Link znajduje się na końcu tekstu. Instalujemy program. Program instalacyjny poprosi nas o wybór komponentów do zainstalowania. Zaznaczmy dodatkowo zakładkę "Utilities". Pozostała częśc instalacji powinna przebiegać bezproblemowo. Po zalecanym restarcie komputera, o ile jeszcze tego nie zrobiliśmy, instalujemy Polan. Następnie otwieramy katalog z grą i klikamy prawym przyciskiem myszy na pliku 'Setup.exe'. W menu kontekstowym, które ujrzymy, powinna znaleźć się pozycka 'Run with VDMS' - to znak, że program został poprawnie zainstalowany. Wybieramy ją. Klikamy "Dalej". Na następnej planszy zaznaczamy ptaszka przy opcji "Adda shortcut to my desktop", o ile chcemy utworzyć skrót do Polan na pulpicie. Następnie dajemy "Zakończ".<BR><BR>
+
+Tutaj może pojawić się problem, który objawi się wyświetleniem  napisu 'Divide error' na czarnym tle. Jeżeli tak będzie, należy zamknąć krzyżykiem okno programu. Spróbujmy uruchomić jeszcze raz program 'Setup.exe', najlepiej za pomocą tego skrótu na pulpicie. Jeżeli pojawi się ten sam problem - próbujemy aż do skutku. Góra pięć prób powinno wystarczyć. Zauważyłem, że na procesorach AMD trzeba większej liczby prób, ale też w końcu powinno się udać. Odpali nam się program do konfiguracji muzyki i dźwięku. Włączamy dźwięk i muzykę wciskając dwa najwyżej położone przyciski. Ustawienia powinny być następuące: IRQ 7, PORT 220, DMA 1. Ewentualnie, gdyby były jakieś kłopoty z dźwiękiem, można spróbować zmienić na IRQ 5. Klikamy na "Zachowaj" i wychodzimy.<BR><BR>
+
+Następnie w systemie Windows klikamy prawym przyciskiem na pliku 'Polanie.exe' i wykonujemy ciąg identycznych czynności, jak w przypadku poprzedniego pliku. Na pulpicie pojawi nam się kolejny skrót, tym razem do właściwej gry. Próbujemy odpalić. W razie 'Divide error' wiecie co robić. Tak jak pisałem wcześniej, w razie problemów z dźwiękiem, można zmienić w setupie na IRQ 5 i powinno działać. W samej grze może istnieć potrzeba przyspieszenia lub zwolnienia gry - można to zrobić w opcjach. Poza tym wszystko powinno działać.<BR><BR>
+
+Komputer, na którym udało mi się uruchomić ma procesor Intel Celeron 1200MHz i kartę dźwiękową SB Live 5.1 Player. Reszta podzespołów nie powinna odgrywać roli. Próbowałem też to samo zrobić na komputerze z zintegrowaną kartą dźwiękową i niestety pojawiły się problemy z dźwiękiem - przykładowo po kliknięciu na postać słyszymy szumy w odzywkach. Muzyka działała dobrze.<BR><BR>
+
+Adres do strony programu VDMSound: <A HREF="http://ntvdm.cjb.net/"  TARGET="_top">ntvdm.cjb.net</A><BR><BR>
+
+<P><HR WIDTH="30%" ALIGN="center"><BR>
+
+<B>Polanie CD | sapucdex</B><BR><BR>
+
+W przypadku płytowej wersji jest nieco łatwiej. Wszystko czego potrzebujemy, to malutki programik do emulacji cd-romu, o nazwie sapucdex. Można ściągnąć go <A HREF="files/pliki/sapucdex1.0.0.5.zip">tutaj</A>. Instalujemy zwyczajnie płytową wersję Polan i do katalogu z grą rozpakowujemy dwa pliki zawarte w 'sapucdex1.0.0.5.zip'. Następnie wybieramy Menu Start -> Uruchom... (lub Run... w wersjach angielskich) i uruchamiamy komende "cmd" w otwartym oknie przechodzimy do katalogu z grą. Na ogół będzie można to zrobić poleceniem "cd cd:\gry\polanie", o ile nie zmienialiście ustawień podczas instalacji. W katalogu z grą wpisujemy "sapucdex" i potwierdzamy Enterem. Na niebieskiej belce aktualnego okna powinien sie pojawić napis 'sapucdex'.<BR><BR>
+
+Podobnie jak w wersji dyskietkowej konfigurujemy dźwięk uruchamiajac 'setup.exe' i włączamy grę. Nie powinno być problemów typu 'Divide error'. Generalnie wszystko powinno działać normalnie. Nie wiem dlaczego, ale niestety nie działa (przynajmniej u mnie) dźwięk podczas odtwarzania filmików wprowadzających. No ale to nie stanowi chyba większego problemu. Dla wygody, aby nie było potrzeby wchodzenia za każdym razem do 'cmd' i wklepywania tych samych poleceń w konsoli, można sobie stworzyć plik 'start.bat' o takiej oto zawartości:<BR><BR>
+
+sapucdex<BR>
+polanie<BR><BR>
+
+Analogicznie można postąpić dla pliku 'setup.exe', choć na ogół nie ma takiej potrzeby. No to miłego grania. :)<BR><BR>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</FONT>
+</HTML>

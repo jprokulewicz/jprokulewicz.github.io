@@ -1,0 +1,98 @@
+<HTML>
+<HEAD><TITLE>News</TITLE>
+<META HTTP-EQUIV="Content-Type" Content="text-html; charset=windows-1250">
+<STYLE type="text/css">
+<!--
+.text     { font-family:verdana; font-size:10px; color:#000000; font-weight:normal }
+.active   { font-family:verdana; font-size:10px; color:#FFFFFF; font-weight:bold }
+TD	  { font-family:verdana; font-size:10px; color:#000000; font-weight:normal; text-align:justify }
+A	  { font-family:verdana; font-size:10px; color:#5B3123; font-weight:bold; text-decoration:none }
+A:Visited { font-family:verdana; font-size:10px; color:#72402E; font-weight:bold; text-decoration:none }
+A:Hover   { font-family:verdana; font-size:10px; color:#FFFFFF; font-weight:bold; text-decoration:none }
+-->
+</STYLE>
+</HEAD>
+<BODY BACKGROUND="files/grafika/tlo_light.jpg" BGPROPERTIES="fixed">
+
+<CENTER>
+<A HREF="polanie_edytor.html" TARGET="strona"><B>EDYTOWANIE MAP</B></A> |
+<A HREF="polanie_edytor_symbole.html" TARGET="strona"><B>SYMBOLE</B></A> |
+<FONT CLASS="active"><B>ALGORYTMY</B></FONT><P><BR>
+
+<FONT CLASS="text">
+
+<TABLE BORDER="1" WIDTH="80%" CELLPADDING="5">
+
+<TR>
+ <TD WIDTH="10%"><CENTER>Litera</TD>
+ <TD WIDTH="90%"><CENTER>Znaczenie</TD>
+</TR>
+
+<TR>
+<TD><CENTER>D</TD>
+<TD><BR>
+<CENTER> Oznacza typ przyjętej przez przeciwnika taktyki. </CENTER>
+<UL TYPE="square">
+ <LI> D0 - przeciwnik posiada wioskę, tworzy krowy i nowe jednostki, które wysyła w Twoją  stronę w małych grupkach,<BR>
+ <LI> D1 - przeciwnik atakuje w kilku turach naszą wioskę, nie tworzy nowych jednostek,<BR>
+ <LI> D2 - przeciwnik nic nie robi poza czekaniem, nie tworzy krów ani nowych oddziałów,<BR>
+ <LI> D3 - brak sterowania.
+</UL>
+</TD>
+</TR>
+
+<TR>
+<TD><CENTER>E</TD>
+<TD><BR>
+<CENTER> Oznacza zakończenia, czyli warunki ukończenia misji. </CENTER>
+<UL TYPE="square">
+<LI> E0 - musisz wybić wszystko z wyjątkiem budynku oznaczonego przez T# (# oznacza numer budynku licząc od lewo-góra od 0, a także górny limit ilości posiadanych budynków),
+<LI> E1 - celem misji jest znalezienie gościa określonego znakiem * i przyprowadzić do 	miejsca oznaczonego ^.<BR>
+Wtedy T oznacza typ danego gościa:<BR>
+00 - krowa,<BR>
+01 - drwal,<BR>
+02 - myśliwy,<BR>
+03 - kapłanka,<BR>
+04 - kapłan,<BR>
+05 - miecznik,<BR>
+06 - włócznik,<BR>
+07 - rycerz,<BR>
+08 - niedźwiedź,<BR>
+09 - strzyga.<BR>
+Dodatkowo w tym samym wierszu powinno się umieścić (nie trzeba!) nazwę jednostki specjalnej ujętą w dwie gwiazdki, np. *Mirko*. Polskie litery można uzyskać podobnie jak w tekstach wprowadzających do misji. Będzie się ona pojawiała podczas gry gdy klikniemy na daną postać.
+<LI> E2 - warunkiem ukończenia misji jest wybudowanie określonej liczby chat, liczbę tą definiujemy patametrem T# (# oznacza docelową liczbę budynków).
+</UL>
+</TD>
+</TR>
+
+<TR>
+<TD><CENTER>M</TD>
+<TD><BR>
+<CENTER> Oznacza maksymalną ilość mleka, którą możemy posiadać.<BR>Jest ona równa stanu początkowemu.<BR>Jaką największą wartość możemy ustawić 9.</CENTER>
+<UL TYPE="square">
+ <LI> M0 - zero mleka, ma zastosowanie w misjach, w których nie mamy wioski.<BR>
+ <LI> M1 - jedna "kreska" mleka,<BR>
+  .......<BR>
+ <LI> M9 - dziewięć "kresek", maksymalna możliwa ilość mleka w grze.
+</UL>
+</TD>
+</TR>
+
+<TR>
+<TD><CENTER>G</TD>
+<TD><BR><CENTER>
+Nieobowiązkowa litera, występuje tylko w jednej postaci.<BR>Dopisanie jej powoduje pojawianie się co jakiś czas losowo wybranych jednostek na piątym polu od góry, przy zachodniej granicy mapy. Musimy pamiętać o zwolnieniu tego pola, gdyż w przeciwnym przypadku jednostki nie będą się pojawiały.</CENTER><BR>
+</TD>
+</TR>
+
+<TR>
+<TD><CENTER>N</TD>
+<TD><BR><CENTER>
+Trudno powiedzieć ale myślę, że jest jakaś wewnętrzna numeracja plansz albo coś takiego. W każdym bądź razie raczej nie powinno się jej zmieniać.</CENTER><BR>
+</TD>
+</TR>
+
+</TABLE><P>
+
+Zmian dotyczących strategii, ilości mleka, itp. dokonujemy poprzez edycję pierwszej linijki rozpoczynającej daną mapę.<P></FONT>
+</HTML>
